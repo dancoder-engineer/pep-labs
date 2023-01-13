@@ -66,12 +66,19 @@ public class CreateATable {
         String sql = FileUtil.parseSQLFile("problem1.sql");
 
         try {
+
+            String sqlCmd="CREATE TABLE song (title TEXT, artist TEXT)";
             Connection connection = ConnectionUtil.getConnection();
             Statement s = connection.createStatement();
             s.executeUpdate(sql);
+            s.executeUpdate(sqlCmd);
         } catch (SQLException e) {
             System.out.println("problem1: " + e.getMessage() + '\n');
         }
+
+        
+
+       
     }
 
 }
