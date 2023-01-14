@@ -35,13 +35,14 @@ public class GetAllSongs {
     public List<Song> problem1(){
 
         String sql = FileUtil.parseSQLFile("problem1.sql");
+        String sqlCmd = "SELECT * FROM song";
 
 
         List<Song> songs = new ArrayList<>();
         try {
             Connection connection = ConnectionUtil.getConnection();
             Statement s = connection.createStatement();
-            ResultSet rs =s.executeQuery(sql);
+            ResultSet rs =s.executeQuery(sqlCmd);
 
             while(rs.next()){
                 songs.add(new Song(rs.getString(1), rs.getString(2)));
@@ -49,6 +50,8 @@ public class GetAllSongs {
         } catch (SQLException e) {
             System.out.println("problem1: " + e.getMessage() + '\n');
         }
+
+        
 
         return songs;
     }
