@@ -68,7 +68,7 @@ public class FilterRecords {
         /**
          *
          */
-        String sql = FileUtil.parseSQLFile("problem1.sql");
+        String sql = "SELECT * FROM employee WHERE last_name = 'Smith'";//FileUtil.parseSQLFile("problem1.sql");
 
 
         List<User> users = new ArrayList<>();
