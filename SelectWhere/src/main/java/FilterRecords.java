@@ -102,7 +102,7 @@ public class FilterRecords {
      */
     public List<User> problem2(){
 
-        String sql = FileUtil.parseSQLFile("problem2.sql");
+        String sql = "SELECT * FROM employee WHERE salary > 75000";//FileUtil.parseSQLFile("problem2.sql");
 
 
         List<User> users = new ArrayList<>();
