@@ -57,7 +57,7 @@ public class CreateTableWithPK {
          *
          * NOTE: The "id" column is what we are going to define as the primary key.
          */
-        String sql = FileUtil.parseSQLFile("problem1.sql");
+        String sql = "CREATE TABLE IF NOT EXISTS song (id INTEGER PRIMARY KEY, title TEXT, artist TEXT)";//FileUtil.parseSQLFile("problem1.sql");
 
         try {
             Connection connection = ConnectionUtil.getConnection();
