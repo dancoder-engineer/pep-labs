@@ -63,7 +63,7 @@ public class FilteringLogicActivity {
          * Problem 1: Write a statement that will query the above table for all employees named 'Steve' who earn
          * more than $75,000.
          */
-        String sql = FileUtil.parseSQLFile("problem1.sql");
+        String sql = "SELECT * from employee WHERE first_name = 'Steve' AND salary > 75000";//FileUtil.parseSQLFile("problem1.sql");
 
 
         //The following code will execute your statement on the database
@@ -88,7 +88,7 @@ public class FilteringLogicActivity {
          * Problem 2: Write a statement that will query the above table for all employees who earn more than $100,000 or less
          * than $50,000
          */
-        String sql = FileUtil.parseSQLFile("problem2.sql");
+        String sql = "SELECT * FROM employee WHERE salary > 100000 OR salary < 50000";//FileUtil.parseSQLFile("problem2.sql");
 
 
         //The following code will execute your statement on the database
@@ -114,7 +114,7 @@ public class FilteringLogicActivity {
          * named 'Steve'
          * Hint: Look up the NOT and IN logical operators.
          */
-        String sql = FileUtil.parseSQLFile("problem3.sql");
+        String sql = "SELECT * FROM employee WHERE salary > 50000 AND first_name != 'Steve'";//FileUtil.parseSQLFile("problem3.sql");
 
 
         //The following code will execute your statement on the database
