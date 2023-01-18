@@ -36,7 +36,7 @@ public class DeleteRecords {
      */
     public void problem1(){
 
-        String sql = FileUtil.parseSQLFile("problem1.sql");
+        String sql = "DELETE FROM site_user WHERE firstname = 'Steve'";//FileUtil.parseSQLFile("problem1.sql");
 
         try {
             Connection connection = ConnectionUtil.getConnection();
