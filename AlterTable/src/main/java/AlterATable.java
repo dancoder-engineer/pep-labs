@@ -54,7 +54,7 @@ public class AlterATable {
      *
      */
     public void problem1(){
-        String sql = FileUtil.parseSQLFile("problem1.sql");
+        String sql = "ALTER TABLE site_user ADD lastname TEXT";//FileUtil.parseSQLFile("problem1.sql");
 
         try {
             Connection connection = ConnectionUtil.getConnection();
