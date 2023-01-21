@@ -98,7 +98,7 @@ public class AggregateFunctionsActivity {
          * Problem 3: use the MIN() aggregate function to return the lowest salary.
          * Note: the output should not contain any other info but the salary.
          */
-        String sql = FileUtil.parseSQLFile("problem3.sql");
+        String sql = "SELECT MIN(salary) FROM employee";//FileUtil.parseSQLFile("problem3.sql");
 
 
         double minimum = 0.0;
@@ -122,7 +122,7 @@ public class AggregateFunctionsActivity {
          * Problem 4: use the MAX() aggregate function to return the highest salary.
          * Note: the output should not contain any other info but the salary.
          */
-        String sql = FileUtil.parseSQLFile("problem4.sql");
+        String sql = "SELECT MAX(salary) FROM employee";//FileUtil.parseSQLFile("problem4.sql");
 
 
         double maximum = 0.0;
