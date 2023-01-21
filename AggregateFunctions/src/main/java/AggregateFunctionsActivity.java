@@ -73,7 +73,7 @@ public class AggregateFunctionsActivity {
          * Problem 2: use the COUNT() aggregate function to output the number of employees with the last name "Smith".
          * Note: the output should not contain any other info but the count.
          */
-        String sql = FileUtil.parseSQLFile("problem2.sql");
+        String sql = "SELECT COUNT(last_name) from employee WHERE last_name = 'Smith'";//FileUtil.parseSQLFile("problem2.sql");
 
 
         int count = 0;
