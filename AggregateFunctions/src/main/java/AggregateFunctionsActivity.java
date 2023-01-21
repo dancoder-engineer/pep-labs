@@ -50,7 +50,7 @@ public class AggregateFunctionsActivity {
          * Problem 1: use the SUM() aggregate function to output the total of all salaries found in the table.
          * Note: the output should not contain any other info but the sum.
          */
-        String sql = FileUtil.parseSQLFile("problem1.sql");
+        String sql = "SELECT SUM(salary) FROM employee";//FileUtil.parseSQLFile("problem1.sql");
 
         double average = 0.0;
         try {
